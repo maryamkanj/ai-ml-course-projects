@@ -9,6 +9,6 @@ The human plays as **X**, and the AI plays as **O** using the **Minimax algorith
 
 ![Tic-Tac-Toe Screenshot](tic-tac-toe.png)
 
-## How to Run
+## How to play
 1. Run the `tic_tac_toe.py` file
 2. Click on a cell to play as **X**. The AI will make its move automatically.
