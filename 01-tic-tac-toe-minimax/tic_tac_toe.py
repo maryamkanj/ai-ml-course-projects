@@ -25,7 +25,7 @@ def is_board_full(board):
 
 
 def minimax(board, is_maximizing):
-    if check_winner(board, "X"):  # Fixed: was "winner"
+    if check_winner(board, "X"):
         return -1
     elif check_winner(board, "O"):
         return 1
@@ -48,12 +48,12 @@ def minimax(board, is_maximizing):
                 board[i] = "X"  # human makes a move
                 score = minimax(board, True)  # switch to maximizing player
                 board[i] = " "  # undo the move
-                best_score = min(best_score, score)  # Fixed: should be min for minimizing player
+                best_score = min(best_score, score)
         return best_score
 
 
 def best_move():
-    best_move_index = None  # Fixed: renamed variable to avoid conflict
+    best_move_index = None
     best_score = -float("inf")
     for i in range(9):
         if board[i] == " ":
@@ -63,14 +63,14 @@ def best_move():
             if score > best_score:
                 best_score = score
                 best_move_index = i
-    return best_move_index  # Fixed: need to return the best move
+    return best_move_index
 
 
-def player_move(index):  # Fixed: added index parameter
+def player_move(index):
     global current_player
     if board[index] == " " and current_player == "X":
         board[index] = "X"
-        buttons[index].config(text="X")  # Fixed: was 'button' should be 'buttons'
+        buttons[index].config(text="X")
         if check_winner(board, "X"):
             messagebox.showinfo("tic-tac-toe", "you win !!")
             reset_board()
@@ -85,9 +85,9 @@ def player_move(index):  # Fixed: added index parameter
 def ai_move():
     global current_player
     index = best_move()
-    if index is not None:  # Added safety check
+    if index is not None:  # safety check
         board[index] = 'O'
-        buttons[index].config(text="O")  # Fixed: was 'button' should be 'buttons'
+        buttons[index].config(text="O")
         if check_winner(board, "O"):
             messagebox.showinfo("tic-tac-toe", "ai wins !!")
             reset_board()
@@ -100,7 +100,7 @@ def ai_move():
 
 def reset_board():
     global board, current_player
-    board = [" " for i in range(9)]  # Fixed: reset the board array
+    board = [" " for i in range(9)]
     current_player = "X"  # human starts the game
     for button in buttons:
         button.config(text=" ")
