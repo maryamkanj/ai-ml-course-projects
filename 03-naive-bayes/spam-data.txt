@@ -1,0 +1,20 @@
+ham	Hey, how are you doing today?
+ham	Lets meet for lunch tomorrow
+spam	WINNER!! You won $1000000 call now to claim
+ham	Remember to buy milk on your way home
+spam	URGENT: Your account has been compromised
+ham	Meeting rescheduled to 3 PM
+spam	FREE entry to win amazing prizes
+ham	Dont forget your appointment
+spam	Congrats! You are selected for prize
+ham	See you at the party tonight
+ham	Your package has been delivered
+spam	Claim your free iPhone now
+ham	Lunch at 1 PM today
+ham	Movie night this weekend?
+spam	You have won a luxury car
+ham	Reminder: Dentist appointment
+spam	Limited time offer just for you
+ham	Can we talk later today?
+spam	Exclusive deal only for you
+ham	Thanks for your help yesterday
