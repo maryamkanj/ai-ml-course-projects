@@ -1,60 +1,39 @@
 # Titanic Survival Classifier
 
-This project demonstrates a **comparison of classic Machine Learning models** on the Titanic dataset to predict passenger survival.
-It includes model training, hyperparameter tuning, and evaluation using multiple metrics and visualizations.
-
----
+This project demonstrates a comprehensive comparison of Machine Learning models on the Titanic dataset to predict passenger survival. It includes model training, hyperparameter tuning, and evaluation using multiple metrics and visualizations.
 
 ## Project Overview
 
-The goal of this project is to **classify passengers as survived or not** based on their features using a variety of ML models.
+The goal of this project is to classify passengers as survived or not based on their features using a variety of ML models with optimized hyperparameters.
 
-Models explored:
+### Models Implemented:
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Decision Tree
+- Random Forest
+- AdaBoost
+- XGBoost
 
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Decision Tree
-* Random Forest
-* AdaBoost
-* XGBoost
+## Technical Implementation
 
-Key workflow steps:
-
-1. Load and preprocess the dataset (`preprocessed_train.csv`)
-2. Split the data into training and testing sets
-3. Initialize models with default parameters
-4. Perform **GridSearchCV / RandomizedSearchCV** for hyperparameter tuning
-5. Train all models and select best parameters
-6. Evaluate models on test data using:
-
-   * Accuracy
-   * F1-score
-   * Confusion matrices
-7. Compare model performance to identify the best classifier
-
----
-
-## What I Implemented
-
-* Imported and prepared the Titanic dataset with pandas and NumPy
-* Split data into training and testing sets using `train_test_split`
-* Initialized multiple classifiers and defined hyperparameter grids
-* Used **GridSearchCV** (and RandomizedSearchCV for XGBoost) to find optimal parameters
-* Trained and evaluated each model
-* Printed **classification reports** and plotted **confusion matrices** for each model
-* Summarized **accuracy** and **F1 scores** in a final results table
-
----
+### Workflow:
+1. **Data Preparation**: Loaded preprocessed Titanic dataset (`preprocessed_train.csv`)
+2. **Train-Test Split**: 80-20 split with stratified sampling to maintain class distribution
+3. **Model Initialization**: Six classifiers with appropriate parameters
+4. **Hyperparameter Tuning**:
+   - **GridSearchCV** for KNN, Decision Tree, Random Forest, and AdaBoost
+   - **RandomizedSearchCV** for XGBoost
+   - 5-fold cross-validation for all models
+5. **Model Evaluation**:
+   - Accuracy and F1 scores
+   - Classification reports
+   - Confusion matrices with visualizations
 
 ## Skills Demonstrated
 
-* Tabular data preprocessing and handling
-* Training multiple classical ML models
-* Hyperparameter tuning using GridSearchCV and RandomizedSearchCV
-* Model evaluation using accuracy, F1 score, classification reports, and confusion matrices
-* Visualizing performance with seaborn heatmaps
-* Comparing models for practical decision-making
-
----
-
-This project is part of my hands-on **AI & Machine Learning learning path**, focusing on **classic ML algorithms and model evaluation techniques**.
+- **Data Preprocessing**: Handling structured data with pandas and NumPy
+- **Model Training**: Implementing multiple classical ML algorithms
+- **Hyperparameter Optimization**: Using GridSearchCV and RandomizedSearchCV with custom parameter grids
+- **Model Evaluation**: Comprehensive assessment using accuracy, F1 score, classification reports, and confusion matrices
+- **Data Visualization**: Creating confusion matrix heatmaps with seaborn
+- **Comparative Analysis**: Systematic model comparison for practical decision-making
