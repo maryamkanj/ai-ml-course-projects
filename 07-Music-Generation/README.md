@@ -40,3 +40,15 @@ It demonstrates sequence modeling, preprocessing of structured musical data, and
 ```bash
 git clone https://github.com/maryamkanj/ai-ml-course-projects.git
 cd 07-Music-Generation
+```
+
+## Run the notebook:
+- Open music_generator.ipynb in PyCharm or Jupyter Notebook.
+- Run all cells in order:
+- The notebook downloads and extracts the Bach chorales dataset
+- Preprocesses the chorales
+- Builds and trains the model
+- Generates new chorales
+- Plays audio locally using the play_chords() function
+## Note:
+Audio playback works only locally in the notebook. GitHub cannot render audio.
